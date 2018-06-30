@@ -1,0 +1,42 @@
+{
+  "name": "express-mock",
+  "version": "1.0.0",
+  "description": "express mock middleware for resftful",
+  "keywords": [
+    "mock",
+    "express",
+    "middleware",
+    "resftful"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "mocha  --check-leaks --bail --no-exit --reporter spec test/"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuxihai123/express-mock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuxihai123/express-mock/issues"
+  },
+  "homepage": "https://github.com/xuxihai123/express-mock#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "path-to-regexp": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "express": "4.16.3",
+    "istanbul": "0.4.5",
+    "mocha": "5.2.0",
+    "supertest": "3.1.0"
+  }
+}
