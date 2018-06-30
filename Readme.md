@@ -7,7 +7,6 @@ express-mock is a express  middleware that creates mocks for REST APIs. It will 
 
 🔥 Built in support for hot Mocker file replacement.  
 🚀 Quickly and easily configure the API via JSON.  
-🌱 Mock API proxying made simple.  
 
 ## Installation
 
@@ -81,7 +80,7 @@ const express = require('express');
 
 const app = express();
 
-+ apiMocker(app, path.resolve('./mocker/index.js'))
++ app.use(apiMocker({entry:'./mocker/index.js',debug:true});
 app.listen(8080);
 ```
 
@@ -105,12 +104,7 @@ module.exports = {
 + devServer: {
 +   ...
 +   before(app){
-+     apiMocker(app, path.resolve('./mocker.js'), {
-+       proxy: {
-+         '/repos/*': 'https://api.github.com/',
-+       },
-+       changeHost: true,
-+     })
++     app.use(apiMocker({entry:'./mocker/index.js',debug:true});
 +   }
 + },
   plugins: [
