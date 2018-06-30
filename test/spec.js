@@ -1,10 +1,8 @@
 var path = require('path')
 var assert = require('assert')
-var cookieParser = require('cookie-parser')
 var express = require('express')
 var request = require('supertest')
 var expressMock = require('../')
-var util = require('util')
 
 var entry = './fixtures/entry.js';
 
