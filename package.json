@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
-    "test": "mocha  --check-leaks --bail --no-exit --reporter spec test/"
+    "test": "mocha  --check-leaks --bail --exit --reporter spec test/"
   },
   "files": [
     "index.js"
