@@ -1,5 +1,5 @@
 {
-  "name": "express-mock",
+  "name": "express-mock-restful",
   "version": "1.0.0",
   "description": "express mock middleware for resftful",
   "keywords": [
@@ -18,14 +18,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xuxihai123/express-mock.git"
+    "url": "git+https://github.com/xuxihai123/express-mock-restful.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xuxihai123/express-mock/issues"
+    "url": "https://github.com/xuxihai123/express-mock-restful/issues"
   },
-  "homepage": "https://github.com/xuxihai123/express-mock#readme",
+  "homepage": "https://github.com/xuxihai123/express-mock-restful#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "chalk": "^2.4.1",

@@ -1,4 +1,4 @@
-express-mock
+express-mock-restful
 ---
 
 express-mock is a express  middleware that creates mocks for REST APIs. It will be helpful when you try to test your application without the actual REST API server.
@@ -11,12 +11,12 @@ express-mock is a express  middleware that creates mocks for REST APIs. It will 
 ## Installation
 
 ```bash
-npm install express-mock --save-dev
+npm install express-mock-restful --save-dev
 ```
 
 ## Usage
 
-express-mock dev support mock, configured in `mocker.js`.
+express-mock-restful dev support mock, configured in `mocker.js`.
 
 ```js
 const mockMap = {
@@ -76,7 +76,7 @@ apiMocker({entry:'./mocker.js',debug:true})
 ```diff
 const path = require('path');
 const express = require('express');
-+ const apiMocker = require('express-mock');
++ const apiMocker = require('express-mock-restful');
 
 const app = express();
 
@@ -93,7 +93,7 @@ Change your config file to tell the dev server where to look for files: `webpack
 ```diff
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-+ const apiMocker = require('express-mock');
++ const apiMocker = require('express-mock-restful');
 
 module.exports = {
   entry: {
