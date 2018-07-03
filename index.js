@@ -34,7 +34,7 @@ module.exports = function(options) {
       }
       bodyParserMethd(req, res, function() {
         const result = pathMatch(
-            {sensitive: false, strict: false, end: false,});
+          {sensitive: false, strict: false, end: false,});
         const match = result(route.path);
         req.params = match(parse(req.url).pathname);
         route.handler(req, res, next);
@@ -89,7 +89,7 @@ module.exports = function(options) {
       createRoute(require(watchFile));
     } catch (err) {
       logcat('Done: Hot Mocker file replacement failed!\n' +
-          chalk.red(err.stack));
+        chalk.red(err.stack));
     }
   }
 
@@ -100,7 +100,7 @@ module.exports = function(options) {
     debug('matchRoute:(path:' + path + '  method:' + method + ')');
     let routerList = mockRouteMap[method];
     return routerList &&
-        routerList.find(item => item.path === uri || item.regexp.test(uri));
+      routerList.find(item => item.path === uri || item.regexp.test(uri));
   }
 };
 
@@ -131,7 +131,7 @@ function pathMatch(options) {
         if (!param) continue;
         params[key.name] = decodeURIComponent(param);
         if (key.repeat) params[key.name] = params[key.name].split(
-            key.delimiter);
+          key.delimiter);
       }
       return params;
     };

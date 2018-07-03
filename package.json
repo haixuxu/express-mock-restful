@@ -20,8 +20,8 @@
     "type": "git",
     "url": "git+https://github.com/xuxihai123/express-mock-restful.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "xuxihai <xuxihai123@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/xuxihai123/express-mock-restful/issues"
   },
