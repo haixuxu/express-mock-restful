@@ -96,10 +96,11 @@ module.exports = function(options) {
   function matchRoute(req) {
     let path = req.url;
     let method = req.method.toLowerCase();
+    let uri = path.replace(/\?.*$/, '');
     debug('matchRoute:(path:' + path + '  method:' + method + ')');
     let routerList = mockRouteMap[method];
     return routerList &&
-        routerList.find(item => item.path === path || item.regexp.test(path));
+        routerList.find(item => item.path === uri || item.regexp.test(uri));
   }
 };
 
