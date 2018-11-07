@@ -1,6 +1,6 @@
 {
   "name": "express-mock-restful",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "express mock middleware for resftful",
   "keywords": [
     "mock",

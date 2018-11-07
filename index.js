@@ -81,12 +81,15 @@ module.exports = function(options) {
       requireFile(watchFile);
     });
   }
-
+  function requireUncached(module){
+    delete require.cache[require.resolve(module)];
+    return require(module)
+  }
   function requireFile(watchFile) {
     debug('refresh watch file...');
     try {
       mockRouteMap = {};
-      createRoute(require(watchFile));
+      createRoute(requireUncached(watchFile));
     } catch (err) {
       logcat('Done: Hot Mocker file replacement failed!\n' +
         chalk.red(err.stack));
