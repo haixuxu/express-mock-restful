@@ -8,7 +8,7 @@
     "middleware",
     "resftful"
   ],
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint ./",
     "test": "mocha  --check-leaks --bail --exit --reporter spec test/"
@@ -30,6 +30,7 @@
     "body-parser": "^1.18.3",
     "chalk": "^2.4.1",
     "debug": "^3.1.0",
+    "memory-fs": "^0.4.1",
     "path-to-regexp": "^2.2.1"
   },
   "devDependencies": {
