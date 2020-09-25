@@ -1,6 +1,6 @@
 {
   "name": "express-mock-restful",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "express mock middleware for resftful",
   "keywords": [
     "mock",
@@ -13,9 +13,6 @@
     "lint": "eslint ./",
     "test": "mocha  --check-leaks --bail --exit --reporter spec test/"
   },
-  "files": [
-    "index.js"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xuxihai123/express-mock-restful.git"
