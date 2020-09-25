@@ -1,6 +1,6 @@
 {
   "name": "express-mock-restful",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "express mock middleware for resftful",
   "keywords": [
     "mock",
@@ -34,10 +34,12 @@
     "path-to-regexp": "^2.2.1"
   },
   "devDependencies": {
+    "chokidar": "^3.4.2",
     "eslint": "3.19.0",
     "express": "4.16.3",
     "istanbul": "0.4.5",
     "mocha": "5.2.0",
+    "require-from-string": "^2.0.2",
     "supertest": "3.1.0"
   }
 }
