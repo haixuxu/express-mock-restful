@@ -9,11 +9,11 @@ const mockMiddleware = require('../../lib');
 // });
 
 const mockFile = path.resolve(__dirname, './entry.js');
-app.use(
-  mockMiddleware(require(mockFile), function (type, msg) {
-    console.log(type, msg);
-  }),
-);
+
+const logFn = function(type, msg) {
+  console.log(type, msg);
+};
+app.use(mockMiddleware(require(mockFile), logFn));
 
 chokidar.watch(mockFile).on('all', (event, path) => {
   try {
