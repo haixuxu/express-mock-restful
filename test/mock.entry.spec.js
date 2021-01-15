@@ -9,7 +9,7 @@ var mockObj = require(entryfile);
 
 var min = 60 * 1000;
 
-describe('mock api', function () {
+describe('mock entry object api', function () {
   before(function () {
     process.chdir(path.resolve(__dirname, '..', './test'));
   });
@@ -84,4 +84,4 @@ describe('mock api', function () {
     var app = express().use(expressMock(mockObj));
     request(app).delete('/api/user/122').expect(200, { status: 'ok', message: '删除成功！' }, done);
   });
-})
+});
