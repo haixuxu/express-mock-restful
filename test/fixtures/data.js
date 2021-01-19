@@ -2,10 +2,7 @@ module.exports = [
   {
     path: '/api/user',
     handler: (req, res) => {
-      return res.json({
-        username: 'admin',
-        sex: 5,
-      });
+      return res.json({ username: 'admin', sex: 5 });
     },
   },
   {
@@ -15,16 +12,9 @@ module.exports = [
       return res.json({
         limit: query.limit,
         offset: query.offset,
-
         list: [
-          {
-            username: 'admin1',
-            sex: 1,
-          },
-          {
-            username: 'admin2',
-            sex: 0,
-          },
+          { username: 'admin1', sex: 1 },
+          { username: 'admin2', sex: 0 },
         ],
       });
     },
@@ -32,9 +22,7 @@ module.exports = [
   {
     path: '/repos/hello',
     handler: (req, res) => {
-      return res.json({
-        text: 'this is from mock server',
-      });
+      return res.json({ text: 'this is from mock server' });
     },
   },
   {
@@ -72,10 +60,7 @@ module.exports = [
           },
         });
       } else {
-        return res.json({
-          status: 'error',
-          code: 403,
-        });
+        return res.json({ status: 'error', code: 403 });
       }
     },
   },
