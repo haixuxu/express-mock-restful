@@ -1,6 +1,8 @@
 ## express-mock-restful
 
-[![Build Status](https://travis-ci.org/xuxihai123/express-mock-restful.svg?branch=master)](https://travis-ci.org/xuxihai123/express-mock-restful)
+![Build Status](https://img.shields.io/github/workflow/status/xuxihai123/express-mock-restful/test/master)
+![Npm Version](https://img.shields.io/npm/v/express-mock-restful)
+![License](https://img.shields.io/npm/l/express-mock-restful)
 
 express-mock is a express middleware that creates mocks for REST APIs. It will be helpful when you try to test your application without the actual REST API server.
 
